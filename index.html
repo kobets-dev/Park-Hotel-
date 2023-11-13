@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/55ddc84952.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
+    <title>Park Hotel</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#about-us">О нас</a>
+            <a href="#entertainment">Развлечения</a>
+            <a href="#apartments">Апартаменты</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="park">
+
+            <div class="wrapper">
+
+                <h1>Парк-отель</h1>
+                <p class="text">Место, где вы можете забыть о городе и воссоединиться с природой.</p>
+                <a href="#reserve">Забронировать</a>
+
+            </div>
+
+        </section>
+
+        <section class="about" id="about-us">
+
+            <div class="wrapper">
+
+                <img src="images/about.jpg" alt="озеро">
+                <h2>О нас</h2>
+                <p class="text">Наш отель расположен на Онежском озере и окружен сосновым лесом.В озере можно купаться, плавать на лодке и рыбачить. На территории отеля есть много развлечений, живописных мест, где вы хорошо проведете время.</p>
+
+            </div>
+
+        </section>
+
+        <section class="entertainment background-grey" id="entertainment">
+
+            <div class="wrapper">
+
+                <h2>Развлечения</h2>
+                <p class="text">На территории парка множество семейных развлечений на любой вкус.</p>
+
+                <article class="entertainment-type">
+                    <i class="fa-solid fa-hot-tub-person"></i>
+                    <h3>Баня</h3>
+                    <p>В нашем Парк-отеле вы сможете посетить настоящую Русскую баню, отдохнуть в специальной комнате, искупаться в бассейне или озере.</p>
+                </article>
+
+                <article class="entertainment-type">
+                    <i class="fa-solid fa-fish"></i>
+                    <h3>Рыбалка</h3>
+                    <p>На Онежском озере вы сможете насладиться рыбалкой в окружении леса круглай год. Мы обеспечим вас всем необходимым снаряжением.</p>
+                </article>
+
+                <article class="entertainment-type">
+                    <i class="fa-solid fa-person-biking"></i>
+                    <h3>Спорт</h3>
+                    <p>В парке есть несколько спортивных пложадок для детей и взрослых. Здесь вы можете арендовать велосипеды, лодку и многое другое.</p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="apartments" id="apartments">
+
+            <div class="wrapper">
+
+                <h2>Наши апартаменты</h2>
+                <p class="text">Для создания интерьеров мы используем только экологичные материалы</p>
+
+                <article class="apartments-type">
+                    <img src="images/hotel.jpg" alt="интерьер комнаты">
+                    <h3>Отель</h3>
+                    <p>10 двойных номеров и 5 номеров на троих с видом на озеро и лес. Завтрак, обед и ужин, а также ежедневная уборка номеров включены в стоимость.</p>
+                </article>
+
+                <article class="apartments-type">
+                    <img src="images/cottage.png" alt="интерьер комнаты">
+                    <h3>Коттедж</h3>
+                    <p>5 шестиместных коттеджей с террасой, сауной, местом для мангала и видом на озеро. Вы можете готовить на собственной кухне или заказывать еду из ресторана.</p>
+                </article>
+
+                <article class="apartments-type">
+                    <img src="images/townhouse.jpg" alt="интерьер комнаты">
+                    <h3>Таунхаус</h3>
+                    <p>5 четырехместных апартаментов с индивидуальной террасой и видом на озеро. Вы можете готовить на собственной кухне или заказывать еду из ресторана.</p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="reserve background-grey" id="reserve">
+
+            <div class="wrapper">
+
+                <form>
+                    <h2>Забронируйте апартаменты</h2>
+                    <p class="text">Напишите, в какие дни вы хотите к нам приехать и запланируйте отдых в Парк-отеле</p>
+                    <label class="user-title" for="userEmail">E-mail</label>
+                    <input class="user-input" type="email" name="email" id="userEmail" placeholder="Ваш e-mail">
+                    <label class="user-title" for="userName">Имя</label>
+                    <input class="user-input" type="text" name="name" id="userName" placeholder="Ваше полное имя">
+                    <p class="paragraph">Выберите тип апартаментов</p>
+                    <div>
+                        <input class="radio" type="radio" name="apartments" id="apartmentsHotel" value="apartmentsHotel" checked>
+                        <label class="radio" for="apartmentsHotel">Отель</label>
+                    </div>
+                    <div>
+                        <input class="radio" type="radio" name="apartments" id="apartmentsCottege" value="apartmentsCottege">
+                        <label class="radio" for="apartmentsCottege">Коттедж</label>
+                    </div>
+                    <div>
+                        <input class="radio" type="radio" name="apartments" id="apartmentsTownhouse" value="apartmentsTownhouse">
+                        <label class="radio" for="apartmentsTownhouse">Таунхаус</label>
+                    </div>
+                    <input class="submit" type="submit" value="Забронировать апартаменты">
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <h2>Парк-отель</h2>
+        <nav>
+            <a href="#about-us">О нас</a>
+            <a href="#entertainment">Развлечения</a>
+            <a href="#apartments">Апартаменты</a>
+        </nav>
+        <div class="networks">
+            <a href="https://vk.com/"> <i class="fa-brands fa-vk"></i> </a>
+            <a href="https://www.whatsapp.com/?lang=ru_RU"> <i class="fa-brands fa-whatsapp"></i> </a>
+            <a href="https://web.telegram.org/a/"> <i class="fa-brands fa-telegram"></i></a>
+            <a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i> </a>
+        </div>
+
+    </footer>
+
+    <div>
+        <a href="#top" class="topbutton"> <i class="fa-solid fa-chevron-up"></i> </a>
+    </div>
+
+</body>
+
+</html>
